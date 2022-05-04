@@ -1,1 +1,143 @@
+body {
+    background-color: darkseagreen;
+}
+
+.quiz-container {
+    width: 600px;
+    border: 2px solid rgb(6, 47, 6);
+    background-color:rgb(213, 243, 213) ;
+    border-radius: 10px;
+    margin: 150px auto;
+}
+
+.quiz-container.hide {
+    display: none;
+}
+
+.quiz-container > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question-number {
+    color:rgb(6, 47, 6);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#question {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.options > div {
+    background-color: white;
+    border: 1px solid rgb(6, 47, 6);
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.options div:hover {
+    background-color: #ccccccaf;
+}
+
+.options div.correct {
+    background-color: green;
+    color: white;
+}
+
+.options div.wrong {
+    background-color: red;
+    color: white;
+}
+
+.options div.disabled {
+    pointer-events: none;
+}
+
+#btn-next {
+    width: 150px;
+    background-color:darkseagreen ;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#answers-tracker {
+    flex-direction: row;
+    justify-content: center;
+}
+
+#answers-tracker div {
+    height: 40px;
+    width: 40px;
+    background-color: #cccccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#answers-tracker div.correct {
+    background-color: green;
+}
+
+#answers-tracker div.wrong {
+    background-color: red;
+}
+
+.quiz-over-modal {
+    display: none;
+    width: 350px;
+    border: 2px solid rgb(6, 47, 6);
+    background-color:rgb(213, 243, 213) ;
+    border-radius: 10px;
+    margin: 150px auto;
+
+}
+
+.quiz-over-modal > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    color:rgb(6, 47, 6);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 15px
+}
+
+#btn-try-again {
+    width: 100px;
+    background-color:darkseagreen ;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.quiz-over-modal.active {
+    display: block;
+}
 
